@@ -36,11 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Se não houver erros, enviar o e-mail
   if ($errorMSG === "") {
-    $EmailTo = "joaopedrogiffoni@hotmail.com;" // Substitua pelo seu e-mail.
+    $EmailTo = "joaopedrogiffoni@hotmail.com;"; // Substitua pelo seu e-mail.
 
     // Preparar o corpo do e-mail
-    $Body = "";
-    $Body .= "Nome: ";
+    $Body = "\n";
+    $Body .= "Nome: ";  
     $Body .= $name;
     $Body .= "\n";
     $Body .= "E-mail: ";
