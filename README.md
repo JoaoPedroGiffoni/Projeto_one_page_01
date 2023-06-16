@@ -24,9 +24,7 @@ O projeto da one page para site comercial utiliza as seguintes tecnologias:
 - **CSS3**: Linguagem de estilos utilizada para definir a aparência e o layout do site.
 - **JavaScript**: Linguagem de programação utilizada para adicionar interatividade e funcionalidades dinâmicas ao site.
 - **Bootstrap**: Framework front-end responsivo utilizado para agilizar o desenvolvimento e facilitar a criação de um design responsivo.
-- **jQuery**: Biblioteca JavaScript utilizada para simplificar
-
- a manipulação de elementos HTML, adicionar animações e facilitar a interação com o usuário.
+- **jQuery**: Biblioteca JavaScript utilizada para simplificar a manipulação de elementos HTML, adicionar animações e facilitar a interação com o usuário.
 
 ## Estrutura de Arquivos
 
@@ -45,13 +43,6 @@ A estrutura de arquivos do projeto segue a seguinte organização:
 |-- README.md
 ```
 
-## Instalação e Uso
-
-1. Faça o download do projeto em formato ZIP ou clone-o através do comando `git clone`.
-2. Descompacte o arquivo ZIP (se necessário) e navegue até o diretório raiz do projeto.
-3. Abra o arquivo `index.html` em um navegador web compatível.
-4. Explore a one page do site comercial, interaja com os elementos e verifique as funcionalidades implementadas.
-
 ## Considerações Finais
 
-Essa documentação abrange os principais aspectos do projeto da one page para site comercial. Certifique-se de atualizar a documentação conforme o desenvolvimento do projeto avança, incluindo informações sobre novas funcionalidades, alterações na estrutura de arquivos, dependências adicionais e quaisquer outras informações relevantes para facilitar o entendimento e colaboração de outros desenvolvedores.
+Essa documentação abrange os principais aspectos do projeto da one page para site comercial.
