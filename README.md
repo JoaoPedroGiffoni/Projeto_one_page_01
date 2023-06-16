@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-A documentação a seguir descreve o projeto de desenvolvimento de uma one page para um site comercial. Essa one page é um tipo de website que tem como objetivo apresentar informações e promover um produto ou serviço de forma concisa e eficiente. O site comercial consiste em uma única página, onde todas as seções estão integradas de forma fluida e interativa.
+A  documentação a seguir descreve o projeto de desenvolvimento de uma one page para um site comercial. Essa one page é um tipo de website que tem como objetivo apresentar informações e promover um produto ou serviço de forma concisa e eficiente. O site comercial consiste em uma única página, onde todas as seções estão integradas de forma fluida e interativa.
 
 ## Funcionalidades Principais
 
