@@ -12,23 +12,9 @@ A one page para site comercial possui as seguintes funcionalidades principais:
 
 2. **Navegação Suave**: A navegação pela página é intuitiva e suave, permitindo que os usuários possam rolar a página ou utilizar links internos para acessar as diferentes seções de forma fácil e rápida.
 
-3. **Seções do Site**: O site comercial é dividido em várias seções que apresentam informações relevantes sobre o produto ou serviço oferecido. As seções podem incluir: 
+3. **Integração com Redes Sociais**: O site pode incluir links para as principais redes sociais relacionadas ao produto ou serviço, permitindo que os usuários possam compartilhar ou seguir a página nas redes sociais.
 
-    - **Seção de Destaque**: Uma seção inicial que chama a atenção do usuário, destacando os principais benefícios do produto ou serviço.
-    
-    - **Seção de Recursos**: Uma seção que apresenta os recursos principais do produto ou serviço, fornecendo detalhes específicos para despertar o interesse dos usuários.
-    
-    - **Seção de Depoimentos**: Uma seção que exibe depoimentos ou avaliações de clientes satisfeitos, com o objetivo de transmitir confiança e credibilidade.
-    
-    - **Seção de Preços**: Uma seção que mostra diferentes planos ou opções de preços, caso seja aplicável ao produto ou serviço em questão.
-    
-    - **Seção de Contato**: Uma seção que oferece informações de contato, como formulário de contato, endereço de e-mail ou número de telefone, para que os usuários possam entrar em contato facilmente.
-    
-    - **Seção de Call-to-Action**: Uma seção que incentiva os usuários a realizar uma ação específica, como efetuar uma compra, solicitar uma demonstração ou assinar uma newsletter.
-    
-4. **Integração com Redes Sociais**: O site pode incluir links para as principais redes sociais relacionadas ao produto ou serviço, permitindo que os usuários possam compartilhar ou seguir a página nas redes sociais.
-
-5. **SEO e Otimização**: O site é desenvolvido levando em consideração as melhores práticas de SEO (Search Engine Optimization), visando melhorar a visibilidade do site nos motores de busca e atrair mais tráfego orgânico.
+4. **SEO e Otimização**: O site é desenvolvido levando em consideração as melhores práticas de SEO (Search Engine Optimization), visando melhorar a visibilidade do site nos motores de busca e atrair mais tráfego orgânico.
 
 ## Tecnologias Utilizadas
 
