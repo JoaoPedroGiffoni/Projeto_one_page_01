@@ -1,69 +1,32 @@
 <?php
-$errorMSG = "";
-
-// Verificar se o método de solicitação é POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  
-  // Verificar se o campo "name" está preenchido
-  if (empty($_POST["name"])) {
-    $errorMSG .= "O nome é obrigatório. ";
-  } else {
-    $name = $_POST["name"];
-  }
-  
-  // Verificar se o campo "email" está preenchido e é um formato de e-mail válido
-  if (empty($_POST["email"])) {
-    $errorMSG .= "O e-mail é obrigatório. ";
-  } else if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-    $errorMSG .= "O e-mail não é válido. ";
-  } else {
-    $email = $_POST["email"];
-  }
-  
-  // Verificar se o campo "subject" está preenchido
-  if (empty($_POST["subject"])) {
-    $errorMSG .= "O assunto é obrigatório. ";
-  } else {
-    $subject = $_POST["subject"];
-  }
-  
-  // Verificar se o campo "message" está preenchido
-  if (empty($_POST["message"])) {
-    $errorMSG .= "A mensagem é obrigatória. ";
-  } else {
-    $message = $_POST["message"];
-  }
+    // Verifique se todos os campos foram preenchidos
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        
+        // Configurar o destinatário do email
+        $to = "joaopedrogiffoni@hotmail.com";
+        $subject = "Novo formulário de contato";
 
-  // Se não houver erros, enviar o e-mail
-  if ($errorMSG === "") {
-    $EmailTo = "joaopedrogiffoni@hotmail.com;"; // Substitua pelo seu e-mail.
+        // Construir o corpo do email
+        $body = "Nome: $name\n";
+        $body .= "Email: $email\n";
+        $body .= "Mensagem:\n$message";
 
-    // Preparar o corpo do e-mail
-    $Body = "\n";
-    $Body .= "Nome: ";  
-    $Body .= $name;
-    $Body .= "\n";
-    $Body .= "E-mail: ";
-    $Body .= $email;
-    $Body .= "\n";
-    $Body .= "Assunto: ";
-    $Body .= $subject;
-    $Body .= "\n";
-    $Body .= "Mensagem: ";
-    $Body .= $message;
-    $Body .= "\n";
+        // Configurar os cabeçalhos do email
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
 
-    // Enviar o e-mail
-    $success = mail($EmailTo, $subject, $Body, "From:".$email);
-
-    // Verificar se o e-mail foi enviado com sucesso
-    if ($success) {
-      echo "success";
+        // Enviar o email
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Obrigado por entrar em contato. Seu formulário foi enviado com sucesso.";
+        } else {
+            echo "Desculpe, ocorreu um erro ao enviar o formulário.";
+        }
     } else {
-      echo "Algo deu errado ao enviar o e-mail :(";
+        echo "Por favor, preencha todos os campos do formulário.";
     }
-  } else {
-    echo $errorMSG;
-  }
 }
 ?>
